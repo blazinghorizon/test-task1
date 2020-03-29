@@ -11,6 +11,7 @@ script:
 
 after_success:
   - coveralls --root . -E ".*external.*" -E ".*tests.*"
+  - sonar-scanner -Dsonar.cfamily.build-wrapper-output=bw-output
 
 addons:
   sonarcloud:
