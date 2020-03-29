@@ -9,8 +9,16 @@ script:
   - make
   - ./tests/tests
 
+addons:
+  sonarcloud:
+    organization: "blazinghorizon"
+    token:
+      secure: "fab24b9d19d921618661cdf8f4ee5ce092f84b01"
+
 after_success:
   - coveralls --root . -E ".*external.*" -E ".*tests.*"
- 
+   - build-wrapper-linux-x86-64 --out-dir bw-output make clean all
+  - sonar-scanner -Dsonar.verbose=true -X
+
 notifications:
   email: false
