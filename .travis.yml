@@ -19,5 +19,9 @@ addons:
     token:
       secure: "360a8d75b6bdc114a1e87626388aad48b7323bb5"
 
+cache:
+  directories:
+  - '$HOME/.sonar/cache'
+
 notifications:
   email: false
