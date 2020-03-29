@@ -17,9 +17,7 @@ after_success:
 addons:
   sonarcloud:
     organization: "blazinghorizon"
-    token:
-      secure: "406545685754a42de84587c7d2554d45a83e56be"
-
+    
 cache:
   directories:
   - '$HOME/.sonar/cache'
