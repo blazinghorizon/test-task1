@@ -9,16 +9,14 @@ script:
   - make
   - ./tests/tests
 
+after_success:
+  - coveralls --root . -E ".*external.*" -E ".*tests.*"
+
 addons:
   sonarcloud:
     organization: "blazinghorizon"
     token:
-      secure: "fab24b9d19d921618661cdf8f4ee5ce092f84b01"
-
-after_success:
-  - coveralls --root . -E ".*external.*" -E ".*tests.*"
-   - build-wrapper-linux-x86-64 --out-dir bw-output make clean all
-  - sonar-scanner -Dsonar.verbose=true -X
+      secure: "edf88bf708d58dde7fb9fd279a08cd5f5d0a9796"
 
 notifications:
   email: false
