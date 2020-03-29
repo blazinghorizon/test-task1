@@ -11,13 +11,14 @@ script:
 
 after_success:
   - coveralls --root . -E ".*external.*" -E ".*tests.*"
+  - build-wrapper-linux-x86-64 --out-dir bw-output make clean all
   - sonar-scanner -Dsonar.cfamily.build-wrapper-output=bw-output
 
 addons:
   sonarcloud:
     organization: "blazinghorizon"
     token:
-      secure: "360a8d75b6bdc114a1e87626388aad48b7323bb5"
+      secure: "406545685754a42de84587c7d2554d45a83e56be"
 
 cache:
   directories:
