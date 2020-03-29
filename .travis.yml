@@ -16,7 +16,7 @@ addons:
   sonarcloud:
     organization: "blazinghorizon"
     token:
-      secure: "edf88bf708d58dde7fb9fd279a08cd5f5d0a9796"
+      secure: "360a8d75b6bdc114a1e87626388aad48b7323bb5"
 
 notifications:
   email: false
