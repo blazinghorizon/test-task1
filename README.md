@@ -1,3 +1,4 @@
 [![Build Status](https://travis-ci.org/blazinghorizon/test-task1.svg?branch=master)](https://travis-ci.org/blazinghorizon/test-task1)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=blazinghorizon_test-task1&metric=alert_status)](https://sonarcloud.io/dashboard?id=blazinghorizon_test-task1)
 [![Coverage Status](https://coveralls.io/repos/github/blazinghorizon/test-task1/badge.svg?branch=master)](https://coveralls.io/github/blazinghorizon/test-task1?branch=master)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=blazinghorizon_test-task1&metric=code_smells)](https://sonarcloud.io/dashboard?id=blazinghorizon_test-task1)
