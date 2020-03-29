@@ -6,7 +6,6 @@ CONFIG -= qt
 SOURCES += main.c \
     myfunc.c \
     task.c
-    x.c
 
 HEADERS += \
     myfunc.h
