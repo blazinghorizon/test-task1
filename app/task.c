@@ -19,6 +19,11 @@ int task(double a, double b, double c, double* x1, double* x2)
             return 2;
         }
 
+        if (b == 0 && c == 0) {
+            *x1 = 0;
+            return 1;
+        }
+
     } else {
 
         if (b != 0) {

@@ -48,4 +48,30 @@ TEST(task, zero_all)
     ASSERT_EQ(task(0, 0, 0, &x1, &x2), -1);
 }
 
+TEST(task, b_zero)
+{
+    double x1;
+    double x2;
+    ASSERT_EQ(task(1, 0, -1, &x1, &x2), 2);
+    ASSERT_EQ(x1, 1);
+    ASSERT_EQ(x2, -1);
+}
+
+TEST(task, c_zero)
+{
+    double x1;
+    double x2;
+    ASSERT_EQ(task(1, 2, 0, &x1, &x2), 2);
+    ASSERT_EQ(x1, 0);
+    ASSERT_EQ(x2, -2);
+}
+
+TEST(task, b_c_zero)
+{
+    double x1;
+    double x2;
+    ASSERT_EQ(task(6, 0, 0, &x1, &x2), 1);
+    ASSERT_EQ(x1, 0);
+}
+
 #endif
