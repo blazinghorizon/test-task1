@@ -1,6 +1,3 @@
-#ifndef TSTTEST1_H
-#define TSTTEST1_H
-
 #include <gtest/gtest.h>
 #include <gmock/gmock-matchers.h>
 
@@ -22,5 +19,3 @@ TEST(test1, suite2)
 {
     EXPECT_EQ(myfunc(-1), 3);
 }
-
-#endif
