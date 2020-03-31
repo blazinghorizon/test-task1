@@ -2,11 +2,15 @@
 #include <math.h>
 #include <stdlib.h>
 #include "myfunc.h"
+#include "task.h"
 
 int main()
 {
-    double a, b, c;
-    double x1, x2;
+    double a;
+    double b;
+    double c;
+    double x1;
+    double x2;
 
     if (scanf("%lf", &a) == 0) {
         fprintf(stderr, "Something bad happened :(");

@@ -2,6 +2,7 @@
 #define FIBONACHI_H
 
 #include <gtest/gtest.h>
+#include <gmock/gmock-matchers.h>
 
 extern "C" {
 #include "myfunc.h"
@@ -22,4 +23,4 @@ TEST(fibonachiTest, negative) {
     ASSERT_EQ(fibonachi(-1), 0);
 }
 
-#endif // FIBONACHI_H
+#endif
